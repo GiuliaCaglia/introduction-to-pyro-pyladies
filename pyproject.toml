@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "introduction-to-pyro-pyladies"
+version = "0.1.0"
+description = ""
+authors = ["Giulia Caglia"]
+readme = "README.md"
+packages = [{include = "introduction_to_pyro_pyladies"}]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4.0"
+pyro-ppl = "^1.8.4"
+pandas = "^2.0.0"
+scikit-learn = "^1.2.2"
+
+[tool.poetry.group.dev.dependencies]
+jupyterlab = "^4.0.0"
+jupyter-black = "^0.3.4"
+black = "^23.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
